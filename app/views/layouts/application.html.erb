@@ -4,12 +4,21 @@
     <title>FirstApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <ul>
+      <li>
+        <%= link_to "One", one_path, :class=> "nav-link" %>
+      </li>
+      <li>
+        <%= link_to "Two", two_path, :class=> "nav-link" %>
+      </li>
+      <li>
+        <%= link_to "Three", three_path, :class=> "nav-link" %>
+      </li>
+    </ul>
     <%= yield %>
   </body>
 </html>
